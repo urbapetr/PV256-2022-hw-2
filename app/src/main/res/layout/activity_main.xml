@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/text_fragment"
         android:name="cz.muni.fi.pv256.hw2.TextFragment"
         android:layout_width="match_parent"
