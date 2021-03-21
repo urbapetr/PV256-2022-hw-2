@@ -7,10 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 private const val FRAGMENT_TEXT = "First Activity"
 private const val FRAGMENT2_TEXT = "Second Activity"
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
         // TODO set FRAGMENT_TEXT in TextFragment
 
