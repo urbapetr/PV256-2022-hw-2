@@ -8,5 +8,10 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
         super.onCreate(savedInstanceState)
 
         // TODO create SecondFragment programmatically, pass it FRAGMENT2_TEXT and place it into container view
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, SecondFragment.newInstance("Second Activity"))
+                .commitNow()
+        }
     }
 }
