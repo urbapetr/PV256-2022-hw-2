@@ -18,10 +18,6 @@ class SecondFragment : Fragment(R.layout.fragment_text) {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     private lateinit var textView: TextView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
