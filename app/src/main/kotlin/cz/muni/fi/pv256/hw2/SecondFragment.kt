@@ -18,12 +18,10 @@ class SecondFragment : Fragment(R.layout.fragment_text) {
         }
     }
 
-    private lateinit var textView: TextView
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val arg = arguments?.getString(FRAGMENT_TEXT) ?: ""
-        textView = view.findViewById(R.id.text)
+        val textView = view.findViewById<TextView>(R.id.text)
         textView.setText(arg)
     }
 }

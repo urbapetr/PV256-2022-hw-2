@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         gotoButton.setOnClickListener {
             // TODO go to SecondActivity
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("FRAGMENT2_TEXT", FRAGMENT2_TEXT)
+            intent.putExtra(FRAGMENT_SECOND, FRAGMENT2_TEXT)
             startActivity(intent)
         }
     }
